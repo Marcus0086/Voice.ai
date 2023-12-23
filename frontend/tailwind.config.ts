@@ -13,8 +13,16 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+      'wave-animation': {
+        '0%': { transform: 'scale(0.5)', opacity: '1' },
+        '100%': { transform: 'scale(1.5)', opacity: '0' },
+      },
+    },
+    animation: {
+      'wave': 'wave-animation 2s infinite',
+    },
     },
   },
-  plugins: [],
 }
 export default config
